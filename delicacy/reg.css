@@ -1,0 +1,281 @@
+/* Reset and base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+  background-color: #fffdfd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+
+
+/* Nav menu */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 0.5rem 0.8rem;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #fcbe03; /* Gold on hover */
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  min-width: 200px;
+  z-index: 999;
+  padding: 0.5rem 0;
+}
+
+.dropdown-menu li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.7rem 1rem;
+  color: rgb(13, 10, 10);
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Explore button */
+.explore-btn {
+  background-color: #ffc107;
+  border: none;
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.explore-btn:hover {
+  background-color: #e0a800;
+  color: white;
+}
+
+
+  .container {
+      
+       height: 55vh;
+           background:linear-gradient(rgba(0, 0, 0, 0.514)) ,url(images/img1.jpg);
+              background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: center;
+padding-top:200px;
+
+     }
+       .container p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .container h2{
+          font-size: 2.5rem;
+          color: red;
+        }
+      
+        .intro {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        
+        .intro h2 {
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+    #north{
+      text-align: center;
+      font-size: 2rem;
+      color: red;
+    }
+   .main {
+  padding: 2rem 1rem;
+  background: #f9f9f9;
+  color: #222;
+}
+
+.main h2 {
+  font-size: 2rem;
+  color: red;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.main p {
+  text-align: center;
+  font-size: 1.125rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* === Flex Layout for Sub Regions === */
+.sub-region {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* === Dish Card === */
+.sub-item {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  width: 45%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sub-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* === Image Styling === */
+.ingredients img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  background-color: #ddd;
+background: rgba(0, 0, 0, 0.4);
+}
+
+/* === Headings === */
+.ingredients h3 {
+  font-size: 1.5rem;
+  color: #c0392b;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.2rem;
+  color: #446c30;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* === List Styling === */
+ul {
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+
+ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* === Origin Section === */
+.origin p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  color: #555;
+  text-align: justify;
+}
+ .origin{
+  background-color: #cbcbc942;
+  border-radius: 15px;
+  border-left:  5px  solid
+  darkgreen;
+ }
+ .preparations {
+  margin: 20px auto;
+  padding: 15px;
+  border: 2px solid forestgreen;
+  border-radius: 10px;
+  max-width: 600px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.toggle-btn {
+  background-color: forestgreen;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: darkgreen;
+}
+
+.steps-list {
+  margin-top: 15px;
+  padding-left: 20px;
+  display: none; /* hidden by default */
+  list-style-type: disc;
+}
+
+.steps-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+.steps-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, padding 0.3s ease;
+}
+
+.steps-list.show {
+  max-height: 500px; /* Enough to show all content */
+  padding-top: 15px;
+}
