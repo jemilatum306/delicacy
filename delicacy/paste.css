@@ -185,3 +185,102 @@ h3{
       color: white;
       margin-top: 2rem;
     }
+    /* ======= RESPONSIVE DESIGN ======= */
+
+/* Tablet and below */
+@media (max-width: 1024px) {
+  .overlay {
+    padding: 5rem 2rem;
+  }
+
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-section, footer {
+    padding: 5rem 2rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .navigate {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navigate div a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .navigate a button {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .hero {
+    height: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .overlay {
+    padding: 2rem 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-section h2 {
+    font-size: 2rem;
+  }
+
+  .about-section, .pastry-section {
+    padding: 3rem 1rem;
+  }
+
+  .pastry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pastry-card img {
+    height: 180px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .overlay p {
+    font-size: 0.95rem;
+  }
+
+  .navigate button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .btn, .toggle-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .recipe {
+    font-size: 0.9rem;
+  }
+
+  .pastry-card img {
+    height: 160px;
+  }
+
+  footer {
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+  }
+}
